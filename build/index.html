@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Antarctica</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -20,14 +20,15 @@
         <ul class="main-nav__logo">
           <li>
             <svg width="70" height="38" aria-label="Логотип Куризы в Антарктику">
-              <use xlink:href="img/sprite_auto.svg#icon-logo"></use></svg>
+              <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+            </svg>
           </li>
         </ul>
         <ul class="main-nav__list">
-          <li>Преимущества</li>
-          <li>Направления</li>
-          <li>Ближайшие круизы</li>
-          <li>Контакты</li>
+          <li><a href="#adv">Преимущества</a></li>
+          <li><a href="#cruises">Направления</a></li>
+          <li><a href="#cruises">Ближайшие круизы</a></li>
+          <li><a href="#contacts">Контакты</a></li>
         </ul>
       </nav>
       <div class="main-title">
@@ -58,41 +59,43 @@
         </div>
       </div>
     </section>
-    <div class="advantage__wraper">
-      <h2>Преимущества</h2>
-      <ul class="advantage__list">
-        <li>
-          <h3>
-            <svg class="advantage__icon" width="27" height="32" aria-label="Иконка корабль">
-              <use xlink:href="img/sprite_auto.svg#icon-ship"></use>
-            </svg>
-            Небольшой круизный лайнер</h3>
-          <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность
-            насладиться видами и природой.</p>
-        </li>
-        <li>
-          <h3>
-            <svg class="advantage__icon" width="38" height="21" aria-label="Иконка галки">
-              <use xlink:href="img/sprite_auto.svg#icon-check"></use>
-            </svg>
-            <p>Система все включено</p>
-          </h3>
-          <p>Все наши круизы работают по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас
-            24 часа.</p>
-        </li>
-        <li>
-          <h3>
-            <svg class="advantage__icon" width="42" height="15" aria-label="Иконка лодка">
-              <use xlink:href="img/sprite_auto.svg#icon-boat"></use>
-            </svg>
-            Экскурсионные туры на Zodiac
-          </h3>
-          <p>Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа Zodiac в сопровождении
-            опытных экскурсоводов.</p>
-        </li>
-      </ul>
-    </div>
-    <section class="offers">
+    <section id="adv" class="advantage">
+      <div class="advantage__wraper">
+        <h2>Преимущества</h2>
+        <ul class="advantage__list">
+          <li>
+            <h3>
+              <svg class="advantage__icon" width="27" height="32" aria-label="Иконка корабль">
+                <use xlink:href="img/sprite_auto.svg#icon-ship"></use>
+              </svg>
+              Небольшой круизный лайнер</h3>
+            <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность
+              насладиться видами и природой.</p>
+          </li>
+          <li>
+            <h3>
+              <svg class="advantage__icon" width="38" height="21" aria-label="Иконка галки">
+                <use xlink:href="img/sprite_auto.svg#icon-check"></use>
+              </svg>
+              <p>Система все включено</p>
+            </h3>
+            <p>Все наши круизы работают по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас
+              24 часа.</p>
+          </li>
+          <li>
+            <h3>
+              <svg class="advantage__icon" width="42" height="15" aria-label="Иконка лодка">
+                <use xlink:href="img/sprite_auto.svg#icon-boat"></use>
+              </svg>
+              Экскурсионные туры на Zodiac
+            </h3>
+            <p>Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа Zodiac в сопровождении
+              опытных экскурсоводов.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="cruises" class="offers">
       <div class="offers__width">
         <h2>Ближайшие круизы</h2>
         <ul class="offers__list">
@@ -306,30 +309,31 @@
           </li>
         </ul>
       </div>
-
     </section>
-    <div class="booking__width">
-      <div class="booking__description">
-        <h2>Раннее бронирование</h2>
-        <p>Забронируйте тур за 3-6 месяцев
-          до даты выезда и сэкономьте до 50%</p>
-      </div>
-      <div>
-        <h3>Оставьте заявку и мы свяжемся с вами в ближайшее время</h3>
-        <form class="boooking__form" method="post">
-          <input type="text" name="name" placeholder="Валерия" required="">
-          <input type="tel" name="phone-number" placeholder="89236889975" required="">
-          <input type="email" name="email" placeholder="grishaewa.lera@gmail.com">
+    <section class="booking">
+      <div class="booking__width">
+        <div class="booking__description">
+          <h2>Раннее бронирование</h2>
+          <p>Забронируйте тур за 3-6 месяцев
+            до даты выезда и сэкономьте до 50%</p>
+        </div>
+        <div>
+          <h3>Оставьте заявку и мы свяжемся с вами в ближайшее время</h3>
+          <form class="boooking__form" method="post">
+            <input type="text" name="name" placeholder="Валерия" required="">
+            <input type="tel" name="phone-number" placeholder="89236889975" required="">
+            <input type="email" name="email" placeholder="grishaewa.lera@gmail.com">
 
-          <div>
-            <input id="checkbox" type="checkbox" name="personal data" class="visually-hidden" checked="">
-            <label for="checkbox" class="booking__checkbox">Я согласен на обработку моих персональных данных</label>
-          </div>
-          <button type="submit" class="booking__form-button button">Оставить заявку</button>
-        </form>
+            <div>
+              <input id="checkbox" type="checkbox" name="personal data" class="visually-hidden" checked="">
+              <label for="checkbox" class="booking__checkbox">Я согласен на обработку моих персональных данных</label>
+            </div>
+            <button type="submit" class="booking__form-button button">Оставить заявку</button>
+          </form>
+        </div>
       </div>
-    </div>
-    <section class="contact">
+    </section>
+    <section id="contacts" class="contact">
       <div class="contact__map">
         <picture>
           <source type="image/webp" media="(max-width: 1023px)" srcset="img/map1x.webp 1x, img/map2x.webp 2x">
@@ -368,32 +372,32 @@
         </svg>
       </div>
       <div class="footer__nav">
-        <ul class="footer__nav footer__nav-list">
-          <li>Преимущества</li>
-          <li>Направления</li>
-          <li>Ближайшие круизы</li>
-          <li>Контакты</li>
+        <ul class="footer__nav-list">
+          <li><a href="#adv">Преимущества</a></li>
+          <li><a href="#cruises">Направления</a></li>
+          <li><a href="#cruises">Ближайшие круизы</a></li>
+          <li><a href="#contacts">Контакты</a></li>
         </ul>
       </div>
       <div class="footer__social">
-        <ul class="footer__social footer__social-list social-link">
+        <ul class="footer__social-list social-link">
           <li class="social-link--facebook">
             <a href="#" aria-label="Мы в Фейсбук">
-              <svg width="11" height="20">
+              <svg class="footer__link" width="11" height="20">
                 <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social-link--instagram">
             <a href="#" aria-label="Мы в Инстаграм">
-              <svg width="20" height="20">
+              <svg class="footer__link" width="20" height="20">
                 <use xlink:href="img/sprite_auto.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="social-link--twitter">
             <a href="#" aria-label="Мы в Твиттер">
-              <svg width="20" height="16">
+              <svg class="footer__link" width="20" height="16">
                 <use xlink:href="img/sprite_auto.svg#icon-twitter"></use>
               </svg>
           </a></li>

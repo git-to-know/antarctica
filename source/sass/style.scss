@@ -1,3 +1,53 @@
-h1 {
-  color: red;
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-v15-cyrillic-regular.woff2") format("woff2"), url("../fonts/montserrat-v15-cyrillic-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-v15-cyrillic-700.woff2") format("woff2"), url("../fonts/montserrat-v15-cyrillic-700.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import "normalize.scss";
+@import "blocks/variable.scss";
+@import "blocks/footer.scss";
+@import "blocks/contact.scss";
+
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", "Arial", sans-serif;
+  background-color: #fafbfd;
+  color: #011C40;
+  min-width: 1024px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+// @media (max-width: $tablet-width) {
+//   body {
+//     min-width: 768px;
+//   }
+// }
+
+// @media (max-width: $mobile-width) {
+//   body {
+//     min-width: 320px;
+//   }
+// }
