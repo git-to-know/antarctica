@@ -20,12 +20,12 @@ var closeButton = document.querySelector('.main-nav__toggle--close');
 mainNav.classList.remove('main-nav__menu');
 
 openButton.addEventListener('click', function (evt) {
-  // evt.preventDefault();
+  evt.preventDefault();
   mainNav.classList.remove('main-nav');
 });
 
 closeButton.addEventListener('click', function (evt) {
-  // evt.preventDefault();
+  evt.preventDefault();
   mainNav.classList.remove('main-nav__menu');
   mainNav.classList.add('main-nav');
 });
