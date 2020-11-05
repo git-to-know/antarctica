@@ -1,0 +1,17 @@
+.button {
+  box-sizing: border-box;
+  height: 43px;
+  width: 100%;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  background-color: $lightblue;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  border: none;
+  text-align: center;
+
+  &:hover {
+    background-color: $backgroundimage-color;
+  }
+}
