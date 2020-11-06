@@ -14,18 +14,18 @@
 //   }
 // });
 var openButton = document.querySelector('.main-nav__toggle--open');
-var mainNav = document.querySelector('.main-main');
+var mainNav = document.querySelector('.main-nav');
 var closeButton = document.querySelector('.main-nav__toggle--close');
-
-mainNav.classList.remove('main-nav__menu');
+console.log(mainNav);
+// mainNav.classList.remove('main-nav__menu');
 
 openButton.addEventListener('click', function (evt) {
   evt.preventDefault();
-  mainNav.classList.remove('main-nav');
+  mainNav.classList.add('main-nav--menu');
 });
 
 closeButton.addEventListener('click', function (evt) {
   evt.preventDefault();
-  mainNav.classList.remove('main-nav__menu');
-  mainNav.classList.add('main-nav');
+  mainNav.classList.remove('main-nav--menu');
+  // mainNav.classList.add('main-nav');
 });
