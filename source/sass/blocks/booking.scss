@@ -1,6 +1,6 @@
 .booking {
   height: 555px;
-  background-image: url(/img/pic_booking1x.jpg);
+  background-image: url("/img/pic_booking1x.jpg");
   background-size: cover;
   background-position: center;
   background-color: $backgroundimage-color;
@@ -10,7 +10,7 @@
   display: flex;
   padding: 50px 163px;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .booking__form {
@@ -22,13 +22,14 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 27px;
-    padding: 50px 50px 35px;
+    padding: 45px 50px 25px;
     margin: 0;
   }
 }
 
 .booking__form-button {
   margin-bottom: 50px;
+  cursor: pointer;
 }
 
 .booking__input {
@@ -40,8 +41,12 @@
     width: 100%;
     height: 43px;
     margin-bottom: 20px;
-    padding: 11px 0 11px 16px;
+    padding: 11px 11px 11px 16px;
     box-sizing: border-box;
+
+    &:last-of-type {
+      margin-bottom: 22px;
+    }
 
     &::placeholder {
       font-size: 14px;
@@ -70,6 +75,7 @@
       width: 18px;
       height: 18px;
       background-color: $white;
+      cursor: pointer;
     }
 
     & + label::after {
@@ -79,10 +85,10 @@
       top: 3px;
       width: 13px;
       height: 10px;
-      background-image: url(../../img/icon-mark.svg);
+      background-image: url("../../img/icon-mark.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
-      display: none
+      display: none;
     }
 
     &:checked + label::after {
@@ -93,19 +99,22 @@
       outline: 1px solid #3b3a39;
       outline-offset: -1px;
     }
+
+    &:hover + label::before {
+      background-color: $hovercolor;
+    }
   }
 }
 
 .booking__description {
   padding-right: 30px;
 
-
   h2 {
     font-size: 40px;
     font-weight: 700;
     line-height: 60px;
     margin: 0;
-    padding-bottom: 30px;
+    padding-bottom: 5px;
   }
 
   p {
@@ -123,7 +132,7 @@
 
   .booking__width {
     flex-direction: column;
-    padding: 100px 0 0 0;
+    padding: 88px 0 0 0;
     text-align: center;
   }
 
@@ -131,11 +140,31 @@
     padding: 0;
 
     h2 {
-      padding-bottom: 25px;
+      font-size: 34px;
+      line-height: 51px;
     }
 
     p {
-      padding-bottom: 60px;
+      padding-bottom: 52px;
+    }
+  }
+
+  .booking__form {
+    h3 {
+      text-align: start;
+    }
+  }
+
+  .booking__input {
+    input {
+      height: 44px;
+      margin-bottom: 19px;
+    }
+  }
+
+  .booking__checkbox {
+    label {
+      padding-bottom: 33px;
     }
   }
 }
@@ -143,20 +172,20 @@
 @media (max-width: $mobile-width) {
   .booking {
     height: 760px;
-    background-image: url(/img/pic_booking1x_tablet.jpg);
+    background-image: url("/img/pic_booking1x_tablet.jpg");
     background-size: cover;
     background-position: center;
   }
 
   .booking__width {
-    padding-top: 65px;
+    padding-top: 60px;
   }
 
   .booking__description {
     h2 {
       font-size: 24px;
       line-height: 31.2px;
-      padding-bottom: 25px;
+      padding-bottom: 13px;
       padding-right: 50px;
       padding-left: 50px;
     }
@@ -164,10 +193,9 @@
     p {
       font-size: 16px;
       line-height: 22.4px;
-      padding-bottom: 40px;
+      padding-bottom: 32px;
       padding-right: 30px;
       padding-left: 30px;
-
     }
   }
 
@@ -183,31 +211,39 @@
     margin-left: 15px;
 
     h3 {
-      padding: 40px 38px 35px;
+      padding: 35px 38px 28px;
       line-height: 25.2px;
+      text-align: center;
     }
   }
 
   .booking__input {
     padding-right: 30px;
     padding-left: 30px;
+
+    input:last-of-type {
+      margin-bottom: 17px;
+    }
   }
 
-  .booking__checkbox label{
-    padding-bottom: 30px;
+  .booking__checkbox label {
+    padding-bottom: 28px;
     text-align: start;
     line-height: 12px;
+    margin-left: 27px;
+    padding-right: 50px;
   }
 
   .booking__checkbox input + label::before {
     width: 20px;
     height: 20px;
-    top: 3px;
+    top: 2px;
+    left: -27px;
   }
 
   .booking__checkbox input + label::after {
-    left: -18px;
-    top: 10px;
+    left: -23px;
+    top: 8px;
     width: 15px;
     height: 18px;
   }
@@ -215,6 +251,4 @@
   .booking__form-button {
     margin-bottom: 40px;
   }
-
-
 }

@@ -7,28 +7,35 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Antarctica</title>
   <link rel="stylesheet" href="css/style.min.css">
+
+  <link rel="preload" href="fonts/montserrat-v15-cyrillic-500.woff" as="font">
+  <link rel="preload" href="fonts/montserrat-v15-cyrillic-500.woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-v15-cyrillic-700.woff" as="font">
+  <link rel="preload" href="fonts/montserrat-v15-cyrillic-700.woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-v15-cyrillic-regular.woff" as="font">
+  <link rel="preload" href="fonts/montserrat-v15-cyrillic-regular.woff2" as="font">
 </head>
 
 <body>
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav .main-nav--show">
 
       <ul class="main-nav__logo">
-        <li>
-          <svg width="70" height="38" aria-label="Логотип Куризы в Антарктику">
-            <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
-          </svg>
+        <li> <a>
+            <svg width="70" height="38" aria-label="Логотип Куризы в Антарктику">
+              <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+            </svg></a>
         </li>
       </ul>
-      <ul class="main-nav__list ">
-        <li><a href="#adv">Преимущества</a></li>
-        <li><a href="#cruises">Направления</a></li>
-        <li><a href="#cruises">Ближайшие круизы</a></li>
-        <li><a href="#contacts">Контакты</a></li>
+      <ul class="main-nav__list">
+        <li class="main-nav__list-item--adv"><a href="#adv">Преимущества</a></li>
+        <li class="main-nav__list-item--directions"><a href="#cruises">Направления</a></li>
+        <li class="main-nav__list-item--cruises"><a href="#cruises">Ближайшие круизы</a></li>
+        <li class="main-nav__list-item--cont"><a href="#contacts">Контакты</a></li>
       </ul>
 
       <a href="#" class="main-nav__toggle main-nav__toggle--close">
-        <svg width="13" height="13" aria-label="Закрыть меню">
+        <svg width="15" height="15" aria-label="Закрыть меню">
           <use xlink:href="img/sprite_auto.svg#icon-close_menu"></use>
         </svg>
       </a>
@@ -38,13 +45,15 @@
         </svg>
       </a>
     </nav>
-    <div class="page-header__description">
-      <h1>Круизы <span class="page-header__break"><br></span>в Антарктику</h1>
-      <p>Волшебный мир айсбергов и пингвинов</p>
-    </div>
-
   </header>
+
   <main>
+    <section class="main-title">
+      <div class="main-title__wraper">
+        <h1>Круизы <span class="main-title__break"><br></span>в Антарктику</h1>
+        <p>Волшебный мир айсбергов и пингвинов</p>
+      </div>
+    </section>
     <section class="description">
       <div class="description__width">
         <div class="description__text">
@@ -63,7 +72,8 @@
 
             <source media="(max-width: 1023px)" srcset="img/penguins1x.jpg 1x, img/penguins2x.jpg 2x">
             <source media="(max-width: 767px)" srcset="img/penguins1x.jpg 1x, img/penguins2x.jpg 2x">
-            <img src="img/penguins1x.jpg" srcset="penguins2x.jpg 2x" alt="Фото пингвинов">
+            <!-- 1х: 560px; 2x: 1120px -->
+            <img src="img/penguins1x.jpg" srcset="penguins2x.jpg 2x" width="560" height="301" alt="Фото пингвинов">
           </picture>
         </div>
       </div>
@@ -73,26 +83,32 @@
         <h2>Преимущества</h2>
         <ul class="advantage__list">
           <li>
-            <svg class="advantage__icon" width="27" height="32" aria-label="Иконка корабль">
-              <use xlink:href="img/sprite_auto.svg#icon-ship"></use>
-            </svg>
+            <div class="advantage__list-item">
+              <svg class="advantage__icon" width="27" height="32" aria-label="Иконка корабль">
+                <use xlink:href="img/sprite_auto.svg#icon-ship"></use>
+              </svg>
+            </div>
             <h3>Небольшой круизный лайнер</h3>
             <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст
               возможность
               насладиться видами и природой.</p>
           </li>
           <li>
-            <svg class="advantage__icon" width="38" height="21" aria-label="Иконка галки">
-              <use xlink:href="img/sprite_auto.svg#icon-check"></use>
-            </svg>
+            <div class="advantage__list-item">
+              <svg class="advantage__icon" width="38" height="21" aria-label="Иконка галки">
+                <use xlink:href="img/sprite_auto.svg#icon-check"></use>
+              </svg>
+            </div>
             <h3>Система все включено</h3>
             <p>Все наши круизы работают по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас
               24 часа.</p>
           </li>
           <li>
-            <svg class="advantage__icon" width="42" height="15" aria-label="Иконка лодка">
-              <use xlink:href="img/sprite_auto.svg#icon-boat"></use>
-            </svg>
+            <div class="advantage__list-item">
+              <svg class="advantage__icon" width="42" height="15" aria-label="Иконка лодка">
+                <use xlink:href="img/sprite_auto.svg#icon-boat"></use>
+              </svg>
+            </div>
             <h3>Экскурсионные туры на Zodiac</h3>
             <p>Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа Zodiac в сопровождении
               опытных экскурсоводов.</p>
@@ -116,7 +132,9 @@
 
                   <source media="(max-width: 1023px)" srcset="img/cruise_astoria1x.jpg 1x, img/cruise_astoria2x.jpg 2x">
                   <source media="(max-width: 767px)" srcset="img/cruise_astoria1x.jpg 1x, img/cruise_astoria2x.jpg 2x">
-                  <img src="img/cruise_astoria1x.jpg" srcset="cruise_astoria2x.jpg 2x" alt="Фото Ледников">
+                  <!-- 1х: 260px; 2x: 520px -->
+                  <img src="img/cruise_astoria1x.jpg" srcset="cruise_astoria2x.jpg 2x" width="260" height="386"
+                    alt="Фото Ледников">
                 </picture>
                 <h3>Круиз “Астория”</h3>
               </div>
@@ -131,7 +149,7 @@
                 <p>11 дней</p>
                 <h4>Цена</h4>
                 <p>от 11500 $</p>
-                <a class="offers-button button" href="#">Забронировать</a>
+                <a href="#" class="offers-button button">Забронировать</a>
               </div>
 
             </div>
@@ -148,7 +166,9 @@
 
                   <source media="(max-width: 1023px)" srcset="img/cruise_minion1x.jpg 1x, img/cruise_minion2x.jpg 2x">
                   <source media="(max-width: 767px)" srcset="img/cruise_minion1x.jpg 1x, img/cruise_minion2x.jpg 2x">
-                  <img src="img/cruise_minion1x.jpg" srcset="cruise_minion2x.jpg 2x" alt="Фото Ледников">
+                  <!-- 1х: 260px; 2x: 520px -->
+                  <img src="img/cruise_minion1x.jpg" srcset="cruise_minion2x.jpg 2x" width="260" height="386"
+                    alt="Фото Ледников">
                 </picture>
                 <h3>Круиз “Элайн”</h3>
               </div>
@@ -182,7 +202,9 @@
                     srcset="img/cruise_atlantis1x.jpg 1x, img/cruise_atlantis2x.jpg 2x">
                   <source media="(max-width: 767px)"
                     srcset="img/cruise_atlantis1x.jpg 1x, img/cruise_atlantis2x.jpg 2x">
-                  <img src="img/cruise_atlantis1x.jpg" srcset="cruise_atlantis2x.jpg 2x" alt="Фото Ледников">
+                  <!-- 1х: 260px; 2x: 520px -->
+                  <img src="img/cruise_atlantis1x.jpg" srcset="cruise_atlantis2x.jpg 2x" width="260" height="386"
+                    alt="Фото Ледников">
                 </picture>
                 <h3>Круиз "Атлантис"</h3>
               </div>
@@ -214,7 +236,9 @@
 
                   <source media="(max-width: 1023px)" srcset="img/cruise_odissey1x.jpg 1x, img/cruise_odissey2x.jpg 2x">
                   <source media="(max-width: 767px)" srcset="img/cruise_odissey1x.jpg 1x, img/cruise_odissey2x.jpg 2x">
-                  <img src="img/cruise_odissey1x.jpg" srcset="cruise_odissey2x.jpg 2x" alt="Фото Ледников">
+                  <!-- 1х: 260px; 2x: 520px -->
+                  <img src="img/cruise_odissey1x.jpg" srcset="cruise_odissey2x.jpg 2x" width="260" height="386"
+                    alt="Фото Ледников">
                 </picture>
                 <h3>Круиз "Одиссей"</h3>
               </div>
@@ -246,7 +270,9 @@
 
                   <source media="(max-width: 1023px)" srcset="img/cruise_olimpia1x.jpg 1x, img/cruise_olimpia2x.jpg 2x">
                   <source media="(max-width: 767px)" srcset="img/cruise_olimpia1x.jpg 1x, img/cruise_olimpia2x.jpg 2x">
-                  <img src="img/cruise_olimpia1x.jpg" srcset="cruise_olimpia2x.jpg 2x" alt="Фото Ледников">
+                  <!-- 1х: 260px; 2x: 520px -->
+                  <img src="img/cruise_olimpia1x.jpg" srcset="cruise_olimpia2x.jpg 2x" width="260" height="386"
+                    alt="Фото Ледников">
                 </picture>
                 <h3>Круиз "Олимпия"</h3>
               </div>
@@ -278,7 +304,9 @@
 
                   <source media="(max-width: 1023px)" srcset="img/cruise_aurora1x.jpg 1x, img/cruise_aurora2x.jpg 2x">
                   <source media="(max-width: 767px)" srcset="img/cruise_aurora1x.jpg 1x, img/cruise_aurora2x.jpg 2x">
-                  <img src="img/cruise_aurora1x.jpg" srcset="cruise_aurora2x.jpg 2x" alt="Фото Ледников">
+                  <!-- 1х: 260px; 2x: 520px -->
+                  <img src="img/cruise_aurora1x.jpg" srcset="cruise_aurora2x.jpg 2x" width="260" height="386"
+                    alt="Фото Ледников">
                 </picture>
                 <h3>Круиз "Аврора"</h3>
               </div>
@@ -309,7 +337,9 @@
 
                   <source media="(max-width: 1023px)" srcset="img/cruise_leonor1x.jpg 1x, img/cruise_leonor2x.jpg 2x">
                   <source media="(max-width: 767px)" srcset="img/cruise_leonor1x.jpg 1x, img/cruise_leonor2x.jpg 2x">
-                  <img src="img/cruise_leonor1x.jpg" srcset="cruise_leonor2x.jpg 2x" alt="Фото Ледников">
+                  <!-- 1х: 260px; 2x: 520px -->
+                  <img src="img/cruise_leonor1x.jpg" srcset="cruise_leonor2x.jpg 2x" width="260" height="386"
+                    alt="Фото Ледников">
                 </picture>
                 <h3>Круиз "Леонор"</h3>
               </div>
@@ -340,7 +370,9 @@
 
                   <source media="(max-width: 1023px)" srcset="img/cruise_minion1x.jpg 1x, img/cruise_minion2x.jpg 2x">
                   <source media="(max-width: 767px)" srcset="img/cruise_minion1x.jpg 1x, img/cruise_minion2x.jpg 2x">
-                  <img src="img/cruise_minion1x.jpg" srcset="cruise_minion2x.jpg 2x" alt="Фото Ледников">
+                  <!-- 1х: 260px; 2x: 520px -->
+                  <img src="img/cruise_minion1x.jpg" srcset="cruise_minion2x.jpg 2x" width="260" height="386"
+                    alt="Фото Ледников">
                 </picture>
                 <h3>Круиз "Минион - 1"</h3>
               </div>
@@ -374,11 +406,11 @@
           <form class="booking__input" method="post">
             <input type="text" name="name" placeholder="Валерия" required>
             <input type="tel" name="phone-number" placeholder="89236889975" required>
-            <input type="email" name="email" placeholder="grishaewa.lera@gmail.com">
+            <input type="email" name="email" placeholder="grishaewa.lera@gmail.com" required>
 
             <div class="booking__checkbox">
-              <input id="checkbox" type="checkbox" name="personal data" class="visually-hidden" checked>
-              <label for="checkbox" class="booking__checkbox--label">Я согласен на обработку моих персональных
+              <input id="checkbox" type="checkbox" name="personal data" class="visually-hidden" checked required>
+              <label for="checkbox">Я согласен на обработку моих персональных
                 данных</label>
             </div>
             <button type="submit" class="booking__form-button button">Оставить заявку</button>
@@ -395,19 +427,20 @@
 
           <source media="(max-width: 1023px)" srcset="img/map1x.jpg 1x, img/map2x.jpg 2x">
           <source media="(max-width: 767px)" srcset="img/map1x.jpg 1x, img/map2x.jpg 2x">
-          <img src="img/map1x.jpg" srcset="map2x.jpg 2x" alt="Карта раположения офиса">
+          <!-- 1х: 560px; 2x: 1120px -->
+          <img src="img/map1x.jpg" srcset="map2x.jpg 2x" width="560" height="306" alt="Карта раположения офиса">
         </picture>
       </div>
       <div class="contact__adress">
         <h3>У вас ещё остались вопросы или сомнения?<span class="contact__break"><br></span> Приезжайте к нам в офис и
           мы вам все расскажем.</h3>
-        <div class="contact__adress--adress">
+        <div class="contact__adress-adress">
           <svg width="18" height="22" aria-label="Метка адреса">
             <use xlink:href="img/sprite_auto.svg#icon-point_mark"></use>
           </svg>
           <p>г. Санкт Петербург,<span class="contact__adress-break"><br></span> ул. Большая Конюшенная, 19/8</p>
         </div>
-        <div class="contact__adress--phone">
+        <div class="contact__adress-phone">
           <svg width="18" height="18" aria-label="Иконка телефон">
             <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
           </svg>
@@ -420,9 +453,10 @@
   <footer class="footer">
     <div class="footer__width">
       <div class="footer__logo">
-        <svg width="70" height="38" aria-label="Логотип Круизы в Антарктику">
-          <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
-        </svg>
+        <a>
+          <svg width="70" height="38" aria-label="Логотип Круизы в Антарктику">
+            <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+          </svg></a>
       </div>
       <div class="footer__nav">
         <ul class="footer__nav-list">
@@ -433,26 +467,27 @@
         </ul>
       </div>
       <div class="footer__social">
-        <ul class="footer__social-list social-link">
-          <li class="social-link--facebook">
+        <ul class="footer__social-list">
+          <li>
             <a href="#" aria-label="Мы в Фейсбук">
-              <svg class="footer__link" width="11" height="20">
+              <svg class="footer__link footer__link--fb" width="11" height="20">
                 <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
-          <li class="social-link--instagram">
+          <li>
             <a href="#" aria-label="Мы в Инстаграм">
-              <svg class="footer__link" width="20" height="20">
+              <svg class="footer__link footer__link--insta" width="20" height="20">
                 <use xlink:href="img/sprite_auto.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
-          <li class="social-link--twitter">
+          <li>
             <a href="#" aria-label="Мы в Твиттер">
-              <svg class="footer__link" width="20" height="16">
+              <svg class="footer__link footer__link--tw" width="20" height="16">
                 <use xlink:href="img/sprite_auto.svg#icon-twitter"></use>
               </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -460,6 +495,8 @@
   </footer>
 
   <script src="js/script.js"></script>
+  <script src="js/picturefill.js"></script>
+  <script src="js/svgxuse.js" defer></script>
 </body>
 
 </html>

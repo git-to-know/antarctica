@@ -32,8 +32,8 @@
 @import "blocks/offers.scss";
 @import "blocks/advantages.scss";
 @import "blocks/description.scss";
-@import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
+@import "blocks/main-title.scss";
 
 
 html {
@@ -43,7 +43,7 @@ html {
 body {
   font-family: "Montserrat", "Arial", sans-serif;
   background-color: #fafbfd;
-  color: #011C40;
+  color: #011c40;
   margin: auto;
 }
 
