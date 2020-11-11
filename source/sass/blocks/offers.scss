@@ -19,7 +19,7 @@
   }
 }
 
-#grid {
+.offers__list {
   display: grid;
   grid-template-columns: repeat(auto-fill, 260px);
   grid-gap: 30px;
@@ -101,7 +101,7 @@
 }
 
 @media (max-width: $tablet-width) {
-  #grid {
+  .offers__list {
     display: grid;
     grid-template-columns: repeat(auto-fill, 309px);
     grid-gap: 30px;
@@ -144,7 +144,7 @@
 }
 
 @media (max-width: $mobile-width) {
-  #grid {
+  .offers__list {
     display: grid;
     grid-template-columns: repeat(auto-fill, 270px);
     grid-gap: 30px;

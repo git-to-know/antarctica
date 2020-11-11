@@ -132,6 +132,10 @@
   }
 }
 
+.booking__break {
+  display: inline;
+}
+
 @media (max-width: $tablet-width) {
   .booking {
     height: 805px;
