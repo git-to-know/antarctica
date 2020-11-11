@@ -1,5 +1,13 @@
-.offers__width {
-  padding: 110px 118px 90px;
+.offers {
+  display: flex;
+  justify-content: center;
+}
+
+.offers__wrapper {
+  padding: 110px 118px 120px;
+  max-width: 1366px;
+  box-sizing: border-box;
+  width: 100%;
 
   h2 {
     font-size: 28px;
@@ -11,16 +19,14 @@
   }
 }
 
-.offers__list {
-  display: flex;
-  flex-wrap: wrap;
+#grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 260px);
+  grid-gap: 30px;
   margin: 0;
   padding: 0;
-  justify-content: space-between;
-
-  li {
-    margin-bottom: 30px;
-  }
+  justify-content: center;
+  max-width: 1160px;
 }
 
 .offers__card {
@@ -95,6 +101,15 @@
 }
 
 @media (max-width: $tablet-width) {
+  #grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 309px);
+    grid-gap: 30px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+
   .offers__card {
     width: 309px;
     overflow: hidden;
@@ -104,12 +119,13 @@
     }
   }
 
-  .offers__width {
-    padding: 90px 60px 70px;
+  .offers__wrapper {
+    padding: 90px 60px 100px;
+    width: 100%;
 
     h2 {
       font-size: 26px;
-      line-height: 39px;;
+      line-height: 39px;
     }
   }
 
@@ -128,12 +144,21 @@
 }
 
 @media (max-width: $mobile-width) {
+  #grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 270px);
+    grid-gap: 30px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+
   .offers__card {
     width: 270px;
   }
 
-  .offers__width {
-    padding: 56px 25px 35px;
+  .offers__wrapper {
+    padding: 56px 25px 64px;
 
     h2 {
       padding-bottom: 31px;
@@ -147,7 +172,6 @@
       padding-bottom: 0;
       padding-left: 25px;
       bottom: 1px;
-
     }
   }
 

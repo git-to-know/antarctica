@@ -3,11 +3,16 @@
   background-image: url("/img/advantage_pic1x.jpg");
   background-size: cover;
   background-position: center;
-  background-color: $backgroundimage-color;
+  background-color: $background-image_color;
+  justify-content: center;
+  display: flex;
 }
 
-.advantage__wraper {
+.advantage__wrapper {
   padding: 109px 103px;
+  max-width: 1366px;
+  box-sizing: border-box;
+  width: 100%;
 
   h2 {
     font-size: 28px;
@@ -61,8 +66,11 @@
 }
 
 @media (max-width: $tablet-width) {
-  .advantage__wraper {
+  .advantage__wrapper {
     padding: 90px 45px;
+    // width: 100%;
+    // box-sizing: border-box;
+    // width: 100%;
 
     h2 {
       font-size: 26px;
@@ -75,7 +83,6 @@
   }
 
   .advantage__list {
-
     h3 {
       padding-top: 18px;
       line-height: 25.2px;
@@ -97,7 +104,7 @@
     height: 997px;
   }
 
-  .advantage__wraper {
+  .advantage__wrapper {
     padding: 55px 15px 0;
 
     h2 {

@@ -1,16 +1,21 @@
 .main-title {
   height: 650px;
-  background-color: $backgroundimage-color;
+  background-color: $background-image_color;
   background-image: url("/img/main1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
 }
 
-.main-title__wraper {
+.main-title__wrapper {
   color: $lightgrey;
-  padding-left: 198px;
+  padding-left: 200px;
   padding-top: 270px;
+  max-width: 1366px;
+  width: 100%;
+  box-sizing: border-box;
 
   h1 {
     font-size: 54px;
@@ -18,6 +23,7 @@
     line-height: 65.83px;
     padding-bottom: 14px;
     margin: 0;
+    white-space: pre-line;
   }
 
   p {
@@ -28,16 +34,12 @@
   }
 }
 
-.main-title__break {
-  display: none;
-}
-
 @media (max-width: $tablet-width) {
   .main-title {
     height: 638px;
   }
 
-  .main-title__wraper {
+  .main-title__wrapper {
     padding-left: 45px;
     padding-top: 267px;
 
@@ -60,15 +62,17 @@
     background-image: url("/img/main_tablet1x.jpg");
     background-size: auto 120%;
     background-position: 45% 20%;
+    background-size: cover;
   }
 
-  .main-title__wraper {
+  .main-title__wrapper {
     padding-left: 15px;
     padding-top: 175px;
 
     h1 {
       font-size: 36px;
       line-height: 45px;
+      white-space: pre-wrap;
     }
 
     p {
@@ -76,9 +80,5 @@
       font-size: 16px;
       padding-right: 100px;
     }
-  }
-
-  .main-title__break {
-    display: inline;
   }
 }

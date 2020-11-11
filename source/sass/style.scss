@@ -1,29 +1,6 @@
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/montserrat-v15-cyrillic-regular.woff2") format("woff2"), url("../fonts/montserrat-v15-cyrillic-regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/montserrat-v15-cyrillic-500.woff2") format("woff2"), url("../fonts/montserrat-v15-cyrillic-500.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/montserrat-v15-cyrillic-700.woff2") format("woff2"), url("../fonts/montserrat-v15-cyrillic-700.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
 @import "normalize.scss";
-@import "blocks/variable.scss";
+@import "blocks/header.scss";
+@import "blocks/fonts.scss";
 @import "blocks/footer.scss";
 @import "blocks/contact.scss";
 @import "blocks/booking.scss";
@@ -35,7 +12,6 @@
 @import "blocks/main-nav.scss";
 @import "blocks/main-title.scss";
 
-
 html {
   box-sizing: border-box;
 }
@@ -45,6 +21,8 @@ body {
   background-color: #fafbfd;
   color: #011c40;
   margin: auto;
+  position: relative;
+  min-width: 320px;
 }
 
 a {
@@ -54,3 +32,5 @@ a {
 li {
   list-style: none;
 }
+
+
