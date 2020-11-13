@@ -115,6 +115,7 @@
 
 .booking__description {
   padding-right: 30px;
+  width: 50%;
 
   h2 {
     font-size: 40px;
@@ -129,11 +130,8 @@
     font-weight: 400;
     line-height: 27px;
     margin: 0;
+    padding-right: 130px;
   }
-}
-
-.booking__break {
-  display: inline;
 }
 
 @media (max-width: $tablet-width) {
@@ -158,6 +156,7 @@
 
     p {
       padding-bottom: 52px;
+      padding-right: 0;
     }
   }
 
@@ -194,6 +193,8 @@
   }
 
   .booking__description {
+    width: 100%;
+
     h2 {
       font-size: 24px;
       line-height: 31.2px;
@@ -209,10 +210,6 @@
       padding-right: 30px;
       padding-left: 30px;
     }
-  }
-
-  .booking__break {
-    display: none;
   }
 
   .booking__form {
@@ -233,17 +230,28 @@
     padding-right: 30px;
     padding-left: 30px;
 
+    input {
+      max-width: inherit;
+    }
+
     input:last-of-type {
       margin-bottom: 17px;
     }
   }
 
-  .booking__checkbox label {
-    padding-bottom: 28px;
-    text-align: start;
-    line-height: 12px;
-    margin-left: 27px;
-    padding-right: 50px;
+  .booking__checkbox {
+    label {
+      padding-bottom: 28px;
+      text-align: start;
+      line-height: 12px;
+      margin-left: 27px;
+      padding-right: 50px;
+    }
+
+    input {
+      width:100%;
+      max-width: fit-content;
+    }
   }
 
   .booking__checkbox input + label::before {

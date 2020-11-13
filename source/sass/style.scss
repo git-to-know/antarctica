@@ -1,6 +1,7 @@
 @import "normalize.scss";
+@import "main_styles.scss";
 @import "blocks/header.scss";
-@import "blocks/fonts.scss";
+@import "fonts.scss";
 @import "blocks/footer.scss";
 @import "blocks/contact.scss";
 @import "blocks/booking.scss";
@@ -11,24 +12,3 @@
 @import "blocks/description.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/main-title.scss";
-
-html {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Montserrat", "Arial", sans-serif;
-  background-color: #fafbfd;
-  color: #011c40;
-  margin: auto;
-  position: relative;
-  min-width: 320px;
-}
-
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}

@@ -22,7 +22,7 @@
 .offers__list {
   display: grid;
   grid-template-columns: repeat(auto-fill, 260px);
-  grid-gap: 30px;
+  grid-gap: 30px 13px;
   margin: 0;
   padding: 0;
   justify-content: center;

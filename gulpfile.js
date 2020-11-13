@@ -101,7 +101,7 @@ gulp.task('clean', function () {
 gulp.task('scripts', function () {
   return gulp.src('source/js/lib/*.js')
     .pipe(concat('vendor.js'))
-    .pipe(gulp.dest('build/js'));
+    .pipe(gulp.dest('build/js/lib'));
 });
 
 gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'scripts', 'html'));
