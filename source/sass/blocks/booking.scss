@@ -148,6 +148,7 @@
 
   .booking__description {
     padding: 0;
+    width: auto;
 
     h2 {
       font-size: 34px;
@@ -156,7 +157,8 @@
 
     p {
       padding-bottom: 52px;
-      padding-right: 0;
+      padding-right: 200px;
+      padding-left: 200px;
     }
   }
 
@@ -249,7 +251,7 @@
     }
 
     input {
-      width:100%;
+      width: 100%;
       max-width: fit-content;
     }
   }
