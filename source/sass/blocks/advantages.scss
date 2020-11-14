@@ -1,9 +1,9 @@
 .advantage {
-  height: 561px;
-  background-image: url("/img/advantage_pic1x.jpg");
+  min-height: 561px;
+  background-image: url("/img/advantage-pic1x.jpg");
   background-size: cover;
   background-position: center;
-  background-color: $background-image_color;
+  background-color: $background-image-color;
   justify-content: center;
   display: flex;
 }
@@ -76,7 +76,7 @@
   }
 
   .advantage {
-    height: 588px;
+    min-height: 588px;
   }
 
   .advantage__list {
@@ -98,7 +98,7 @@
 
 @media (max-width: $mobile-width) {
   .advantage {
-    height: 997px;
+    min-height: 997px;
   }
 
   .advantage__wrapper {

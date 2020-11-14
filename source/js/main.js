@@ -7,22 +7,23 @@
   if (mainNav) {
     mainNav.classList.remove('main-nav--show');
 
-
-    closeButton.addEventListener('click', function (evt) {
-      evt.preventDefault();
+    var closeButtonClickHandler = function (evt) {
       if (mainNav.classList.contains('main-nav--show')) {
+        evt.preventDefault();
         mainNav.classList.remove('main-nav--show');
       }
-      closeButton.removeEventListener('click', evt);
-    });
+      closeButton.removeEventListener('click', closeButtonClickHandler);
+    };
+    closeButton.addEventListener('click', closeButtonClickHandler);
 
-    openButton.addEventListener('click', function (evt) {
-      evt.preventDefault();
+    var openButtonClickHandler = function (evt) {
       if (!mainNav.classList.contains('main-nav--show')) {
+        evt.preventDefault();
         mainNav.classList.add('main-nav--show');
       }
-      openButton.removeEventListener('click', evt);
-    });
+      openButton.removeEventListener('click', openButtonClickHandler);
+    };
+    openButton.addEventListener('click', openButtonClickHandler);
   }
 
 })();

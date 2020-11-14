@@ -1,9 +1,9 @@
 .booking {
-  height: 555px;
-  background-image: url("/img/pic_booking1x.jpg");
+  min-height: 555px;
+  background-image: url("/img/pic-booking1x.jpg");
   background-size: cover;
   background-position: center;
-  background-color: $background-image_color;
+  background-color: $background-image-color;
   display: flex;
   justify-content: center;
 }
@@ -136,7 +136,7 @@
 
 @media (max-width: $tablet-width) {
   .booking {
-    height: 805px;
+    min-height: 805px;
   }
 
   .booking__wrapper {
@@ -184,8 +184,8 @@
 
 @media (max-width: $mobile-width) {
   .booking {
-    height: 760px;
-    background-image: url("/img/pic_booking1x_tablet.jpg");
+    min-height: 760px;
+    background-image: url("/img/pic-booking1x-tablet.jpg");
     background-size: cover;
     background-position: center;
   }

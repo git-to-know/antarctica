@@ -1,6 +1,6 @@
 .main-title {
-  height: 650px;
-  background-color: $background-image_color;
+  min-height: 650px;
+  background-color: $background-image-color;
   background-image: url("/img/main1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -35,7 +35,7 @@
 
 @media (max-width: $tablet-width) {
   .main-title {
-    height: 638px;
+    min-height: 638px;
   }
 
   .main-title__wrapper {
@@ -57,8 +57,8 @@
 
 @media (max-width: $mobile-width) {
   .main-title {
-    height: 500px;
-    background-image: url("/img/main_tablet1x.jpg");
+    min-height: 500px;
+    background-image: url("/img/main-tablet1x.jpg");
     background-position: 45% 20%;
     background-size: cover;
   }
