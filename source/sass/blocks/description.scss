@@ -21,6 +21,7 @@
     padding-bottom: 20px;
     margin: 0;
     width: auto;
+    letter-spacing: -0.3px;
   }
 
   p {
@@ -30,6 +31,7 @@
     margin: 0;
     width: auto;
     padding-right: 50px;
+    padding-bottom: 8px;
   }
 }
 
@@ -39,7 +41,7 @@
 
 @media (max-width: $tablet-width) {
   .description__wrapper {
-    padding: 100px 45px 92px;
+    padding: 91px 45px 86px;
   }
 
   .description__text {
@@ -47,13 +49,13 @@
 
     h2 {
       font-size: 26px;
-      line-height: 30px;
-      padding-bottom: 20px;
+      line-height: 36.4px;
+      padding-bottom: 15px;
       padding-right: 120px;
     }
 
     p {
-      padding-right: 10px;
+      padding-right: 14px;
     }
   }
 
@@ -89,7 +91,8 @@
 
     p {
       padding-bottom: 31px;
-      padding-left: 25px;
+      padding-left: 24px;
+      padding-right: 14px;
     }
   }
 

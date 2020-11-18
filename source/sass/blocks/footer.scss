@@ -16,12 +16,13 @@ $mobile-width: 767px;
 .footer__wrapper {
   width: 100%;
   display: flex;
-  padding: 50px 103px;
+  padding: 50px 103px 45px;
   max-width: 1160px;
 }
 
 .footer__logo {
   padding-right: 40px;
+  align-items: center;
 
   a {
     color: $lightgrey;
@@ -31,19 +32,23 @@ $mobile-width: 767px;
 .footer__nav {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
 }
 
 .footer__nav-list {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   margin: 0;
   padding: 0;
   font-size: 16px;
   font-weight: 500;
+  max-width: 1053px;
+  flex-wrap: wrap;
 
   li {
     padding-right: 33px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   a {
@@ -132,6 +137,7 @@ $mobile-width: 767px;
 
     li {
       padding-bottom: 17px;
+      padding-top: 0;
 
       &:last-child {
         padding-bottom: 0;

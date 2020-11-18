@@ -3,8 +3,10 @@
   var openButton = document.querySelector('.main-nav__toggle--open');
   var mainNav = document.querySelector('.main-nav');
   var closeButton = document.querySelector('.main-nav__toggle--close');
+  var header = document.querySelector('.page-header');
 
-  if (mainNav) {
+  if (header) {
+    header.classList.remove('page-header--nojs');
     mainNav.classList.remove('main-nav--show');
 
     var closeButtonClickHandler = function (evt) {

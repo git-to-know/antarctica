@@ -10,7 +10,7 @@
 
 .booking__wrapper {
   display: flex;
-  padding: 50px 165px;
+  padding: 50px 162px;
   align-items: center;
   justify-content: space-between;
   max-width: 1366px;
@@ -19,7 +19,7 @@
 }
 
 .booking__form {
-  width: 403px;
+  width: 404px;
   background-color: $blue;
   color: $lightgrey;
 
@@ -131,6 +131,7 @@
     line-height: 27px;
     margin: 0;
     padding-right: 130px;
+    padding-bottom: 10px;
   }
 }
 
@@ -191,7 +192,7 @@
   }
 
   .booking__wrapper {
-    padding-top: 60px;
+    padding-top: 62px;
   }
 
   .booking__description {
@@ -208,7 +209,7 @@
     p {
       font-size: 16px;
       line-height: 22.4px;
-      padding-bottom: 32px;
+      padding-bottom: 36px;
       padding-right: 30px;
       padding-left: 30px;
     }
