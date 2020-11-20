@@ -75,11 +75,12 @@
   .description__wrapper {
     flex-direction: column;
     padding: 58px 0 65px;
+    width: 100%;
   }
 
   .description__text {
-    width: auto;
     padding-right: 0;
+    width: 100%;
 
     h2 {
       font-size: 24px;

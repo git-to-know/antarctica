@@ -15,6 +15,7 @@
         mainNav.classList.remove('main-nav--show');
       }
       closeButton.removeEventListener('click', closeButtonClickHandler);
+      openButton.addEventListener('click', openButtonClickHandler);
     };
     closeButton.addEventListener('click', closeButtonClickHandler);
 
@@ -24,6 +25,7 @@
         mainNav.classList.add('main-nav--show');
       }
       openButton.removeEventListener('click', openButtonClickHandler);
+      closeButton.addEventListener('click', closeButtonClickHandler);
     };
     openButton.addEventListener('click', openButtonClickHandler);
   }
