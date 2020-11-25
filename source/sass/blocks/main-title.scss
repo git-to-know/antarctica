@@ -1,7 +1,7 @@
 .main-title {
   min-height: 650px;
   background-color: $background-image-color;
-  background-image: url("/img/main1x.jpg");
+  background-image: url("../img/main1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,7 +58,7 @@
 @media (max-width: $mobile-width) {
   .main-title {
     min-height: 500px;
-    background-image: url("/img/main-tablet1x.jpg");
+    background-image: url("../img/main-tablet1x.jpg");
     background-position: 45% 20%;
     background-size: cover;
   }
